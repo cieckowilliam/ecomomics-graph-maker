@@ -2,6 +2,17 @@ import matplotlib.pyplot as plt
 from dataclasses import dataclass
 from drafter import *
 
+set_website_title("Economics Graph Maker")
+set_site_information(
+    author="William Ciecko",
+    description="Makes custom and accurate economics graphs based on the introduction to microeconomics curriculum",
+    sources="Thanks to the Drafter docs, my teacher, previous code, BlockPy, and matplotlib docs",
+    planning=["plan.pdf", "design.pdf"],
+    links=["https://github.com/cieckowilliam/ecomomics-graph-maker"]
+)
+hide_debug_information()
+set_website_framed(False)
+
 @dataclass
 class Graph:
     title: str
